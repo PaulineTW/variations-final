@@ -1,5 +1,4 @@
-console.log('Hello')
-// import {getNumberOfChars, getFirstChar, getLastChar, getLower, getUpper, getCapitalized} from "variations.js";
+import {getNumberOfChars, getFirstChar, getLastChar, getLower, getUpper, getCapitalized} from "./variations.js";
 
 const answer1 = document.querySelector("#answer1");
 const answer2 = document.querySelector("#answer2");
@@ -11,7 +10,7 @@ const answer6 = document.querySelector("#answer6");
 const name = document.querySelector("#your-name");
 
 name.addEventListener("keyup", () => {
-    const value = name.value;
+    let value = name.value;
 
     answer1.textContent = getNumberOfChars(value);
     answer2.textContent = getFirstChar(value);
